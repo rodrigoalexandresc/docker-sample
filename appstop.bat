@@ -1,0 +1,1 @@
+docker-compose -f ".\docker-compose.yml" -p appf1 --no-ansi down --rmi local --remove-orphans

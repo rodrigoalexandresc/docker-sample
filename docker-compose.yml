@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+    fihistory-api:
+        image: f1history-api-image
+        build: 
+            context: ./f1history.api
+            dockerfile: Dockerfile
+        ports: 
+            - "6002:80"
+
+    f1history-ui:
+        image: f1history-ui-image
+        build: 
+            context: ./f1history.ui
+            dockerfile: Dockerfile
+        ports: 
+            - "80:80"                        
